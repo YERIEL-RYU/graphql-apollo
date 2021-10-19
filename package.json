@@ -1,0 +1,26 @@
+{
+  "name": "graphql-apollo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "graphql-apollo"
+  },
+  "keywords": [
+    "graphql"
+  ],
+  "author": "YERIEL-RYU",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  },
+  "dependencies": {
+    "apollo-server": "^3.4.0",
+    "convert-csv-to-json": "^1.3.1"
+  }
+}
