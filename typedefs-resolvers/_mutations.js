@@ -5,6 +5,12 @@ const typeDefs = gql`
       deleteEquipment(id: String): Equipment
       deleteSupply(id: String): Supply
       postPerson (input: PostPersonInput): People!
+      postTeam(input: PostTeamInput!): Team!,
+      editTeam(
+          id: ID!,
+          input: PostTeamInput!
+      ): Team!
+      deleteTeam(id: ID!): Team!
     }
 `
 

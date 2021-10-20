@@ -10,12 +10,13 @@ const supplies = require('./typedefs-resolvers/supplies')
 const givens = require('./typedefs-resolvers/givens')
 const tools = require('./typedefs-resolvers/tools')
 const roles = require('./typedefs-resolvers/roles')
-
+const teams = require('./typedefs-resolvers/teams')
 
 const typeDefs = [
     queries,
     mutations,
     enums,
+    teams.typeDefs,
     people.typeDefs,
     roles.typeDefs,
     equipments.typeDefs,
@@ -26,6 +27,7 @@ const typeDefs = [
 ]
 
 const resolvers = [
+    teams.resolvers,
     people.resolvers,
     roles.resolvers,
     equipments.resolvers,

@@ -2,6 +2,11 @@ const { gql } = require('apollo-server')
 
 const typeDefs = gql`
     type Query {
+        teams(
+            manager: String, 
+            cleaning_duty: String
+            ): [Team]
+        team(id: ID!): Team
         people: [People],
         peopleFiltered(
             team: Int,
