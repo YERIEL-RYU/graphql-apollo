@@ -14,6 +14,7 @@ const typeDefs = gql`
             blood_type: BloodType,
             from: String
         ): [People]
+        person(id: ID!): People
         peoplePaginated(
             page: Int!,
             per_page: Int!

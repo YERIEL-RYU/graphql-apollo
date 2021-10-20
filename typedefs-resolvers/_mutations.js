@@ -11,7 +11,12 @@ const typeDefs = gql`
           input: PostTeamInput!
       ): Team!
       deleteTeam(id: ID!): Team!
-    }
+      editPerson(
+        id: ID!,
+        input: PostPersonInput!
+      ): People!
+      deletePerson(id: ID!): People!
+      }
 `
 
 module.exports = typeDefs

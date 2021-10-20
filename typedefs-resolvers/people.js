@@ -30,9 +30,12 @@ const resolvers = {
         people: (parent, args) => dbWorks.getPeople(args),
         peopleFiltered: (parent, args) => dbWorks.getPeople(args),
         peoplePaginated: (parent, args) => dbWorks.getPeople(args),
+        person: (parent, args) => dbWorks.getPeople(args)[0]
     },
     Mutation: {
-        postPerson: (parent, args) => dbWorks.postPerson(args)
+        postPerson: (parent, args) => dbWorks.postPerson(args),
+        editPerson: (parent, args) => dbWorks.editPerson(args),
+        deletePerson: (parent, args) => dbWorks.deleteItem('people', args)
     }
 }
 module.exports = {
