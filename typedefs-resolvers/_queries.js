@@ -19,6 +19,8 @@ const typeDefs = gql`
         software: Software
         supplies: [Supply]
         givens: [Given]
+        roles: [RoleInfo]
+        role(id: ID!): RoleInfo
     }
 `
 
